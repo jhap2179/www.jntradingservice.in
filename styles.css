@@ -1,0 +1,156 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    margin-bottom: 5px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('images/output.jpg'); /* You can replace with your own image */
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 40px;
+    color: white;
+}
+
+.hero-content p {
+    font-size: 20px;
+    color: white;
+}
+
+/* About and Services Sections */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+#about {
+    background-color: #f4f4f4;
+}
+
+#services {
+    background-color: #fafafa;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.service {
+    width: 30%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.service h3 {
+    color: #4CAF50;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #f4f4f4;
+}
+
+#contact a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .service-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .hero-content h2 {
+        font-size: 30px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 24px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .service {
+        width: 100%;
+    }
+}
+
