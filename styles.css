@@ -44,7 +44,7 @@ header nav ul li a {
 
 /* Hero Section */
 .hero {
-    background-image: url('output.jpg'); /* You can replace with your own image */
+    background-image: url('jntradingservice/output.jpg'); /* You can replace with your own image */
     background-size: cover;
     background-position: center;
     padding: 60px 0;
