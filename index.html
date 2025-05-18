@@ -6,13 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JN Trading Services</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Scroll to Top Button */
+        #topBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        #topBtn:hover {
+            background-color: #555;
+        }
+
+        /* Simple Contact Form Styling */
+        #contact form {
+            max-width: 500px;
+            margin-top: 20px;
+        }
+
+        #contact input,
+        #contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        #contact button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #contact button:hover {
+            background-color: #555;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <div class="logo">
             <h1>JN Trading Services</h1>
-            <p>Import/Export of Cotton & Indian Spices</p>
+            <p>Exporter of Cotton & Indian Spices</p>
         </div>
         <nav>
             <ul>
@@ -31,34 +79,90 @@
         </div>
     </section>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We specialize in the global trade of high-quality cotton and authentic Indian spices. With over 20 years of experience, we deliver the best products to your doorstep.</p>
-    </section>
+<section id="about">
+  <h2>About Us</h2>
+  <p>
+    At <strong>JN Trading Services</strong>, we take pride in being a trusted name in the global trade of premium cotton and authentic Indian spices. With over two decades of industry expertise, our mission is to deliver the finest agricultural products from India to international markets.
+  </p>
+<br> </br>
+  <p>
+    We specialize in sourcing high-quality raw cotton, combed and carded cotton varieties, along with aromatic and richly flavored spices like turmeric, cumin, coriander, and red chili powder. Every product we export reflects our commitment to quality, sustainability, and customer satisfaction.
+  </p>
+<br> </br>
+  <p>
+    Our global reach spans multiple countries, and we cater to textile manufacturers, spice distributors, and bulk commodity buyers who seek consistency, authenticity, and value. Through robust quality control, reliable logistics, and ethical trade practices, JN Trading Services continues to build lasting partnerships worldwide.
+  </p>
+<br> </br>
+</section>
 
     <section id="services">
         <h2>Our Services</h2>
         <div class="service-list">
             <div class="service">
-                <h3>Cotton Export</h3>
-                <p>We export premium cotton to various countries with reliable and efficient service.</p>
-            </div>
+    <h3><a href="cotton-export.html" style="color: inherit; text-decoration: none;">Cotton</a></h3>
+    <p></p>
+</div>
             <div class="service">
-                <h3>Indian Spices</h3>
-                <p>We provide authentic Indian spices that meet international quality standards.</p>
-            </div>
-        </div>
+    <h3><a href="indian-spices.html" style="color: inherit; text-decoration: none;">Indian Spices</a></h3>
+    <p></p>
+</div>
+
+<section id="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial">
+        <p>"Outstanding service and top-quality products!"</p>
+        <h4>– Ramesh K., Textile Importer</h4>
+    </div>
+<div class="stars">★★★★★</div>
+    <div class="testimonial">
+        <p>"JN Trading has been our trusted partner for years."</p>
+        <h4>– Anita M., Spice Distributor</h4>
+    </div>
+<div class="stars">★★★★★</div>
+</section>
+
     </section>
 
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>Email us at: <a href="mailto:info@jntrading.com">info@jntrading.com</a></p>
-        <p>Phone: +91 123 456 7890</p>
+        <p>Email us at: <a href="mailto:sales@jntradingservice.in">sales@jntradingservice.in</a></p>
+        <p>Phone: +91 9643288213</p>
+
+        <!-- Contact Form -->
+        <form action="mailto:sales@jntradingservice.in" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </section>
 
     <footer>
         <p>&copy; 2024 JN Trading Services. All rights reserved.</p>
     </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="topBtn" onclick="scrollToTop()">↑ Top</button>
+
+    <!-- Scroll to Top Script -->
+    <script>
+        const topBtn = document.getElementById("topBtn");
+
+        window.onscroll = function () {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                topBtn.style.display = "block";
+            } else {
+                topBtn.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    </script>
 </body>
 
 </html>
